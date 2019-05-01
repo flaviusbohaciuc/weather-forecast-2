@@ -1,0 +1,105 @@
+@import "src/index.scss";
+
+.windmill {
+  margin-top: 100px;
+  width: 300px;
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* KEYFRAMES */
+
+@keyframes rotateWindmill {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/* ANIMATIONS */
+
+.flaps {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  animation: rotateWindmill 4s linear infinite;
+}
+
+/* OBJECTS */
+
+.post {
+  position: absolute;
+  width: 10px;
+  height: 200px;
+  background: linear-gradient(
+    to top,
+    $color-white 0%,
+    darken($color-white, 20%) 100%
+  );
+  top: 145px;
+  left: 145px;
+  border-radius: 3px;
+}
+
+.engine {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(
+    to bottom,
+    $color-white 0%,
+    darken($color-white, 20%) 100%
+  );
+  top: 130px;
+  left: 140px;
+}
+
+.head {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 135px;
+  left: 145px;
+  z-index: 1000;
+  background: radial-gradient(
+    center,
+    $color-white 0%,
+    darken($color-white, 40%) 100%
+  );
+  border-radius: 50%;
+}
+
+.flap {
+  width: 5px;
+  height: 120px;
+  position: absolute;
+  background: linear-gradient(
+    to bottom,
+    $color-white 0%,
+    darken($color-white, 20%) 100%
+  );
+  border-top-left-radius: 5px 20px;
+}
+
+.flaps .flap:nth-child(1) {
+  top: -20px;
+  left: 97px;
+}
+
+.flaps .flap:nth-child(2) {
+  top: 70px;
+  left: 150px;
+  transform: rotate(120deg);
+}
+
+.flaps .flap:nth-child(3) {
+  top: 70px;
+  left: 45px;
+  transform: rotate(240deg);
+}

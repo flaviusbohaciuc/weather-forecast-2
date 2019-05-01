@@ -1,6 +1,7 @@
 import React from "react";
 import Cloud from "./component/cloud";
 import Sun from "./component/sun";
+import Windmill from "./component/windmill";
 
 const WeatherForecastApp = () => {
   return (
@@ -8,6 +9,7 @@ const WeatherForecastApp = () => {
       <h1>Weather Forecast</h1>
       <Sun />
       <Cloud />
+      <Windmill />
     </div>
   );
 };

@@ -17,24 +17,6 @@
 
 /* KEYFRAMES */
 
-@-webkit-keyframes animatedRay {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@-moz-keyframes animatedRay {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 @keyframes animatedRay {
   0% {
     transform: rotate(0deg);
@@ -55,18 +37,11 @@
   bottom: 0;
   width: 70px;
   animation: animatedRay 120s linear infinite;
-  -webkit-animation: animatedRay 120s linear infinite;
 }
 
 /* OBJECTS */
 
 .ray {
-  background: -webkit-linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.8) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0) 0%,
@@ -82,8 +57,6 @@
 .ray1 {
   height: 170px;
   width: 30px;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
   transform: rotate(180deg);
   top: -175px;
   left: 15px;
@@ -91,8 +64,6 @@
 .ray2 {
   height: 100px;
   width: 8px;
-  -webkit-transform: rotate(220deg);
-  -moz-transform: rotate(220deg);
   transform: rotate(220deg);
   top: -90px;
   left: 75px;
@@ -100,8 +71,6 @@
 .ray3 {
   height: 170px;
   width: 50px;
-  -webkit-transform: rotate(250deg);
-  -moz-transform: rotate(250deg);
   transform: rotate(250deg);
   top: -80px;
   left: 100px;
@@ -109,8 +78,6 @@
 .ray4 {
   height: 120px;
   width: 14px;
-  -webkit-transform: rotate(305deg);
-  -moz-transform: rotate(305deg);
   transform: rotate(305deg);
   top: 30px;
   left: 100px;
@@ -118,8 +85,6 @@
 .ray5 {
   height: 140px;
   width: 30px;
-  -webkit-transform: rotate(-15deg);
-  -moz-transform: rotate(-15deg);
   transform: rotate(-15deg);
   top: 60px;
   left: 40px;
@@ -127,8 +92,6 @@
 .ray6 {
   height: 90px;
   width: 50px;
-  -webkit-transform: rotate(30deg);
-  -moz-transform: rotate(30deg);
   transform: rotate(30deg);
   top: 60px;
   left: -40px;
@@ -136,8 +99,6 @@
 .ray7 {
   height: 180px;
   width: 10px;
-  -webkit-transform: rotate(70deg);
-  -moz-transform: rotate(70deg);
   transform: rotate(70deg);
   top: -35px;
   left: -40px;
@@ -145,8 +106,6 @@
 .ray8 {
   height: 120px;
   width: 30px;
-  -webkit-transform: rotate(100deg);
-  -moz-transform: rotate(100deg);
   transform: rotate(100deg);
   top: -45px;
   left: -90px;
@@ -154,8 +113,6 @@
 .ray9 {
   height: 80px;
   width: 10px;
-  -webkit-transform: rotate(120deg);
-  -moz-transform: rotate(120deg);
   transform: rotate(120deg);
   top: -65px;
   left: -60px;
@@ -163,8 +120,6 @@
 .ray10 {
   height: 190px;
   width: 23px;
-  -webkit-transform: rotate(150deg);
-  -moz-transform: rotate(150deg);
   transform: rotate(150deg);
   top: -185px;
   left: -60px;
