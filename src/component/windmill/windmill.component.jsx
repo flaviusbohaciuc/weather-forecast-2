@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { StateContext } from "../../redux";
 import "./windmill.style.scss";
 
 const Windmill = () => {
+
+  const {temperature, windSpeed} = useContext(StateContext)
+  console.log(temperature, windSpeed)
+
   return (
     <div className="wrapper">
       <div className="windmill">
