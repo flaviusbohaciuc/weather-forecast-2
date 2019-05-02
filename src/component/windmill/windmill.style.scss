@@ -20,17 +20,6 @@
   }
 }
 
-/* ANIMATIONS */
-
-.flaps {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: 40px;
-  left: 50px;
-  animation: rotateWindmill 4s linear infinite;
-}
-
 /* OBJECTS */
 
 .post {
@@ -85,21 +74,4 @@
     darken($color-white, 20%) 100%
   );
   border-top-left-radius: 5px 20px;
-}
-
-.flaps .flap:nth-child(1) {
-  top: -20px;
-  left: 97px;
-}
-
-.flaps .flap:nth-child(2) {
-  top: 70px;
-  left: 150px;
-  transform: rotate(120deg);
-}
-
-.flaps .flap:nth-child(3) {
-  top: 70px;
-  left: 45px;
-  transform: rotate(240deg);
 }
