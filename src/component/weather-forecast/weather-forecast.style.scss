@@ -1,9 +1,9 @@
 @import "src/index.scss";
 
-p {
+.current-weather {
   color: $color-charm;
   font-size: 20px;
   font-weight: bold;
-  text-align: right;
-  margin-right: 10vw;
+  text-align: left;
+  margin-left: 10vw;
 }

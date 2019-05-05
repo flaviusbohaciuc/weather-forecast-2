@@ -29,11 +29,11 @@ const WeatherForecast = () => {
   }, []);
 
   return (
-    <div>
-      <p>Current Weather:</p>
-      <p>{windSpeed} mps</p>
-      <p>{Math.round(temperature)} &#176;C</p>
-      <p>{description}</p>
+    <div className="current-weather">
+      <h2>Current Weather:</h2>
+      <p>windspeed - {windSpeed} mps</p>
+      <p>temperature - {Math.round(temperature)} &#176;C</p>
+      <p>description - {description}</p>
     </div>
   );
 };
