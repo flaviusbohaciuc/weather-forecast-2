@@ -7,3 +7,4 @@ export const API_URL =
 
 export const UPDATE_TEMPERATURE = "weather-forecast.UPDATE_TEMPERATURE";
 export const UPDATE_WINDSPEED = "weather-forecast.UPDATE_WINDSPEED";
+export const UPDATE_DESCRIPTION = "weather-forecast.UPDATE_DESCRIPTION";

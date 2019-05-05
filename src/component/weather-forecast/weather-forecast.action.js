@@ -1,4 +1,4 @@
-import { UPDATE_TEMPERATURE, UPDATE_WINDSPEED } from "./weather-forecast.const";
+import { UPDATE_TEMPERATURE, UPDATE_WINDSPEED, UPDATE_DESCRIPTION } from "./weather-forecast.const";
 
 export const updateTemperatureAction = value => ({
   type: UPDATE_TEMPERATURE,
@@ -7,5 +7,10 @@ export const updateTemperatureAction = value => ({
 
 export const updateWindSpeedAction = value => ({
   type: UPDATE_WINDSPEED,
+  value
+});
+
+export const updateDescriptionAction = value => ({
+  type: UPDATE_DESCRIPTION,
   value
 });

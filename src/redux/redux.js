@@ -1,12 +1,14 @@
 import { createContext } from "react";
 import {
   UPDATE_TEMPERATURE,
-  UPDATE_WINDSPEED
+  UPDATE_WINDSPEED,
+  UPDATE_DESCRIPTION
 } from "../component/weather-forecast/weather-forecast.const";
 
 export const initialState = {
   windSpeed: 3,
-  temperature: 20
+  temperature: 20,
+  description: "sunny"
 };
 
 export const reducer = (state, action) => {
@@ -22,6 +24,12 @@ export const reducer = (state, action) => {
       return {
         ...state,
         windSpeed: action.value.speed
+      };
+      break;
+    case UPDATE_DESCRIPTION:
+      return {
+        ...state,
+        description: action.value.description
       };
       break;
     default:

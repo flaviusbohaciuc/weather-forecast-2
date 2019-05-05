@@ -4,8 +4,7 @@ import "./windmill.style.scss";
 import { FlapsStyled } from "./windmill.style";
 
 const Windmill = () => {
-  const { temperature, windSpeed } = useContext(StateContext);
-  // console.log(temperature)
+  const { windSpeed } = useContext(StateContext);
 
   return (
     <div className="wrapper">

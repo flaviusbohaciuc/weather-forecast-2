@@ -1,28 +1,28 @@
-import React, { useEffect, useState, useContext } from "react";
-import { DispatchContext } from "../../redux";
+import React, { useEffect, useContext } from "react";
+import { DispatchContext, StateContext } from "../../redux";
 import "./weather-forecast.style.scss";
 import axios from "axios";
 import { API_URL } from "./weather-forecast.const";
 import {
   updateWindSpeedAction,
-  updateTemperatureAction
+  updateTemperatureAction,
+  updateDescriptionAction
 } from "./weather-forecast.action";
 
 const WeatherForecast = () => {
-  const [wind, setWind] = useState({});
-  const [temperature, setTemp] = useState({});
   const dispatch = useContext(DispatchContext);
+  const { windSpeed, temperature, description } = useContext(StateContext);
 
   useEffect(() => {
     axios.get(API_URL).then(
       ({ data }) => {
-        // console.log(data.wind.speed)
-        // console.log(data.main.temp)
-
-        setWind(data.wind);
+        console.log(data.wind.speed);
+        console.log(data.main.temp);
+        console.log(data.weather[0].description);
+        
         dispatch(updateWindSpeedAction(data.wind));
-        setTemp(data.main);
         dispatch(updateTemperatureAction(data.main));
+        dispatch(updateDescriptionAction(data.weather[0]));
       },
       error => console.error(error)
     );
@@ -30,8 +30,10 @@ const WeatherForecast = () => {
 
   return (
     <div>
-      <p>Wind speed: {wind.speed} mps</p>
-      <p>Temperature: {Math.round(temperature.temp)} &#176;C</p>
+      <p>Current Weather:</p>
+      <p>{windSpeed} mps</p>
+      <p>{Math.round(temperature)} &#176;C</p>
+      <p>{description}</p>
     </div>
   );
 };
