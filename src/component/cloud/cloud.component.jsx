@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import { StateContext } from "../../redux";
 import "./cloud.style.scss";
-import { CloudStyled } from './cloud.style'
+import { CloudStyled } from "./cloud.style";
 
 const Cloud = () => {
-  const {windSpeed} = useContext(StateContext)
+  const { windSpeed } = useContext(StateContext);
+
   return (
     <div className="wrapper">
       <div className="clouds">
