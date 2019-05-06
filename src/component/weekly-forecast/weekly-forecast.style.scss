@@ -1,0 +1,23 @@
+.flex-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    
+    font-size: 17px;
+    text-align: center;
+    width: 40vw;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+    padding: 0.5rem;
+    background-color: rgba(216, 112, 147, 0.5);
+    z-index: 2;
+}
+
+.grid-wrapper {
+    display: grid;
+    max-width: 800px;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 10px;
+}

@@ -5,6 +5,7 @@ import Windmill from "./component/windmill";
 import WeatherForecast from "./component/weather-forecast";
 import { initialState, reducer } from "./redux";
 import { DispatchContext, StateContext } from "./redux";
+import WeaklyForecast from "./component/weekly-forecast";
 
 const WeatherForecastApp = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -16,6 +17,7 @@ const WeatherForecastApp = () => {
           <Sun />
           <Cloud />
           <WeatherForecast />
+          <WeaklyForecast />
           <Windmill />
         </div>
       </StateContext.Provider>

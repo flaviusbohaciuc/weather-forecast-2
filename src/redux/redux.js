@@ -3,18 +3,26 @@ import {
   UPDATE_TEMPERATURE,
   UPDATE_WINDSPEED,
   UPDATE_DESCRIPTION,
-  UPDATE_MAINWEATHER
+  UPDATE_MAINWEATHER,
+  UPDATE_WEEKLY
 } from "../component/weather-forecast/weather-forecast.const";
 
 export const initialState = {
   windSpeed: 3,
   temperature: 20,
   description: "sunny",
-  mainweather: "sunny"
+  mainweather: "sunny",
+  weeklyTempData: []
 };
 
 export const reducer = (state, action) => {
   switch (action.type) {
+    case UPDATE_WEEKLY:
+      return {
+        ...state,
+        weeklyTempData: action.value
+      };
+      break;
     case UPDATE_TEMPERATURE:
       state = {
         ...state,
