@@ -30,10 +30,10 @@ const WeatherForecast = () => {
 
   return (
     <div className="current-weather">
-      <h2>Current Weather:</h2>
-      <p>windspeed - {windSpeed} mps</p>
-      <p>temperature - {Math.round(temperature)} &#176;C</p>
-      <p>description - {description}</p>
+      <h2>Current Weathers</h2>
+      <p>Temperature: {Math.round(temperature)} &#176;C</p>
+      <p>Windspeed: {windSpeed} mps</p>
+      <p>Description: {description}</p>
     </div>
   );
 };

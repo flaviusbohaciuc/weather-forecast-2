@@ -16,8 +16,8 @@ const WeatherForecastApp = () => {
           <h1>London Weather Forecast</h1>
           <Sun />
           <WeatherForecast />
-          <Windmill />
           <Cloud />
+          <Windmill />
         </div>
       </StateContext.Provider>
     </DispatchContext.Provider>

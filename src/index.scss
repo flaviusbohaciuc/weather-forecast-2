@@ -16,10 +16,17 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   background-color: $color-dodger-blue;
-  overflow: hidden;
+  // overflow: hidden;
+}
+
+h1{
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  color: $color-charm;
 }
 
 .wrapper {
-  // position: relative;
+  position: relative;
   height: 250px;
 }
