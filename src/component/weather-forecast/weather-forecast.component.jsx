@@ -17,15 +17,18 @@ const WeatherForecast = () => {
   useEffect(() => {
     axios.get(API_URL).then(
       ({ data }) => {
-        console.log(data.list[0].wind.speed);
         console.log(data.list[0].main.temp);
-        console.log(data.list[0].weather[0].description);
+        console.log(data.list[0].wind.speed);
         console.log(data.list[0].weather[0].main);
+        console.log(data.list[0].weather[0].description);
+        console.log(data.list[0].dt);
+        console.log(data.list[1].dt);
         
         dispatch(updateWindSpeedAction(data.list[0].wind));
         dispatch(updateTemperatureAction(data.list[0].main));
         dispatch(updateDescriptionAction(data.list[0].weather[0]));
         dispatch(updateMainweatherAction(data.list[0].weather[0]));
+
       },
       error => console.error(error)
     );
