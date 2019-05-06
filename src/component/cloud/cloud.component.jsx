@@ -18,12 +18,12 @@ const Cloud = () => {
         <CloudStyled windSpeed123={windSpeed} scale={0.5}>
           <div className="cloud" />
         </CloudStyled>
-        <CloudStyled windSpeed123={windSpeed} scale={0.4}>
+        {/* <CloudStyled windSpeed123={windSpeed} scale={0.4}>
           <div className="cloud" />
         </CloudStyled>
         <CloudStyled windSpeed123={windSpeed} scale={0.55}>
           <div className="cloud" />
-        </CloudStyled>
+        </CloudStyled> */}
       </div>
     </div>
   );

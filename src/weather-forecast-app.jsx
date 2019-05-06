@@ -13,10 +13,9 @@ const WeatherForecastApp = () => {
     <DispatchContext.Provider value={dispatch}>
       <StateContext.Provider value={state}>
         <div className="content">
-          <h1>London Weather Forecast</h1>
           <Sun />
-          <WeatherForecast />
           <Cloud />
+          <WeatherForecast />
           <Windmill />
         </div>
       </StateContext.Provider>

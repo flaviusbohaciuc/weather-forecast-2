@@ -4,6 +4,7 @@ import "./sun.style.scss";
 const Sun = () => {
   return (
     <div className="wrapper">
+      <h1>London Weather Forecast</h1>
       <div className="sun">
         <div className="ray-box">
           <div className="ray ray1" />
