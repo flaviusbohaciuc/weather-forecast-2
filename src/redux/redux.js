@@ -22,6 +22,7 @@ export const reducer = (state, action) => {
         ...state,
         weeklyTempData: action.value
       };
+      // eslint-disable-next-line
       break;
     case UPDATE_TEMPERATURE:
       state = {
@@ -29,24 +30,28 @@ export const reducer = (state, action) => {
         temperature: action.value.temp
       };
       return state;
+      // eslint-disable-next-line
       break;
     case UPDATE_WINDSPEED:
       return {
         ...state,
         windSpeed: action.value.speed
       };
+      // eslint-disable-next-line
       break;
     case UPDATE_DESCRIPTION:
       return {
         ...state,
         description: action.value.description
       };
+      // eslint-disable-next-line
       break;
     case UPDATE_MAINWEATHER:
       return {
         ...state,
         mainweather: action.value.main
       };
+      // eslint-disable-next-line
       break;
     default:
       return state;
