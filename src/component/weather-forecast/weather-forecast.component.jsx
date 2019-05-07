@@ -22,7 +22,9 @@ const WeatherForecast = () => {
         const dayForecast = {}
         data.list.map(i => {
           const [date, time] = i.dt_txt.split(' ');
-          const fullDate = new Date(i.dt_txt);
+          const fullDate = new Date(i.dt_txt)
+          console.log()
+
           if (!dayForecast[date]) {
             dayForecast[date] = {
               hourKeyList: [],
@@ -42,8 +44,8 @@ const WeatherForecast = () => {
         const dateList = Object.keys(dayForecast)
         const firstDate = dateList[0];
         const firstTime = dayForecast[firstDate].hourKeyList[0]
-        const weeklyTempData = dateList.map(date => dayForecast[date].temperature[firstTime])
-
+        const weeklyTempData = dateList.map(date => dayForecast[date].temperature[firstTime]).filter(Boolean)
+        console.log(weeklyTempData)
         dispatch(updateWeeklyAction(weeklyTempData));
         dispatch(updateWindSpeedAction(data.list[0].wind));
         dispatch(updateTemperatureAction(data.list[0].main));
