@@ -13,7 +13,7 @@ import {
 
 const WeatherForecast = () => {
   const dispatch = useContext(DispatchContext);
-  const dayNameList = ['', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+  const dayNameList = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
   const { windSpeed, temperature = '', description, mainweather } = useContext(StateContext);
 
   useEffect(() => {
