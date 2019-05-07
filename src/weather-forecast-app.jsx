@@ -17,7 +17,7 @@ const WeatherForecastApp = () => {
           <Sun />
           <Cloud />
           <WeatherForecast />
-          <WeaklyForecast />
+          {/* <WeaklyForecast /> */}
           <Windmill />
         </div>
       </StateContext.Provider>
