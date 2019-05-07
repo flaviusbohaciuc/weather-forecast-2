@@ -12,7 +12,7 @@ import "./weekly-forecast.style.scss";
                     return (
                         <div key={dayNamed}>
                             <p>{dayNamed}</p>
-                            <p>{Math.floor(temperature)}</p>
+                            <p>{Math.floor(temperature)} <span>&#176;C</span></p>
                         </div>
                     )
                 })}
